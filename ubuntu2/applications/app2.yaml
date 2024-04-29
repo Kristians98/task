@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: trivy
   namespace: argocd
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: prometheus
+    namespace: trivy
   project: default
   source:
-    repoURL: https://prometheus-community.github.io/helm-charts
-    targetRevision: 25.20.1
-    chart: prometheus
+    repoURL: https://aquasecurity.github.io/helm-charts/
+    targetRevision: 0.7.0
+    chart: trivy-operator
   syncPolicy:
     automated: {}
     syncOptions:
