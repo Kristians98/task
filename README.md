@@ -21,6 +21,7 @@ Installed Prometheus and Trivy using ArgoCD
 ![prometheus](./.attachments/prometheus.png)
 
 Created necessary repository structure
+
 ![structure](./.attachments/structure.png)
 
 ## Step 6
